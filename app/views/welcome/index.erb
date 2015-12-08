@@ -2,6 +2,7 @@
 <head>
   <h4>CSE 5335-axr2788</h4>
   <h4>Both extra credits implemented</h4>
+  <h4> FADE IN ANIMATION IMPLEMENTED </h4>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -40,22 +41,22 @@ setInterval(function(){
 	             {     
 	                 
 				      var table_row = $("<tr id='"+count+"'>");
-				      $("#tablecontent").append(table_row).delay(500).fadeIn(500);
-					  table_row.append($("<td>" + response[i].rowid + "</td>"));
+				      $("#tablecontent").append(table_row).delay(700).fadeIn(4000);
+					  table_row.append($("<td><b>" + response[i].rowid + "</b></td>"));
 					  table_row.append($("<td>" + "--------" + "</td>"));
-					  table_row.append($("<td>" + response[i].zip + "</td>"));
+					  table_row.append($("<td><b>" + response[i].zip + "</b></td>"));
 					  table_row.append($("<td>" + "---------" + "</td>"));
-					  table_row.append($("<td>" + response[i].latitude + "</td>"));
+					  table_row.append($("<td><b>" + response[i].latitude + "</b></td>"));
 					  table_row.append($("<td>" + "---------" + "</td>"));
-					  table_row.append($("<td>" + response[i].longitude + "</td>"));
+					  table_row.append($("<td><b>" + response[i].longitude + "</b></td>"));
 					  table_row.append($("<td>" + "----------" + "</td>"));
-					  table_row.append($("<td>" + response[i].city + "</td>"));	
+					  table_row.append($("<td><b>" + response[i].city + "</b></td>"));	
 					  table_row.append($("<td>" + "----------" + "</td>"));
-					  table_row.append($("<td>" + response[i].state + "</td>"));
+					  table_row.append($("<td><b>" + response[i].state + "</b></td>"));
 					  table_row.append($("<td>" + "-----------" + "</td>"));
-					  table_row.append($("</tr>"));
+					  //table_row.append($("</tr>"));
 					  $("#tablecontent tr#"+count).hide();
-              		  $("#tablecontent tr#"+count).fadeIn(500);
+              		  $("#tablecontent tr#"+count).fadeTo("slow",0.9);
               		  if(count%20 == 0)
 					 {
 						 $('#content tbody').html("");
