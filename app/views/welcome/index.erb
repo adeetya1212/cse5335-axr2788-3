@@ -1,0 +1,73 @@
+<html>
+<head>
+  <h4>CSE 5335-axr2788</h4>
+  <h4>Both extra credits implemented</h4>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+<h3> Getting JSON response...... </h3>
+
+<br/>
+<br/>
+
+<h4> table_row_ID--------ZIP---------LATITUDE-------LONGITUDE--------CITY-------STATE </h4>
+<table id="content" padding="200">
+   
+    <tbody id = "tablecontent">
+    </tbody>
+</table>
+</body>
+</html>
+
+
+
+
+<script>
+var count = 1;
+$("#content").hide();
+$("#content").show();
+ 
+setInterval(function(){
+		$.get("maincontroller/getjson/"+ count.toString(), function(response)
+				 
+		   {
+		
+			for (var i = 0; i < 175; i++)
+	             {     
+	                 
+				      var table_row = $("<tr id='"+count+"'>");
+				      $("#tablecontent").append(table_row).delay(500).fadeIn(500);
+					  table_row.append($("<td>" + response[i].rowid + "</td>"));
+					  table_row.append($("<td>" + "--------" + "</td>"));
+					  table_row.append($("<td>" + response[i].zip + "</td>"));
+					  table_row.append($("<td>" + "---------" + "</td>"));
+					  table_row.append($("<td>" + response[i].latitude + "</td>"));
+					  table_row.append($("<td>" + "---------" + "</td>"));
+					  table_row.append($("<td>" + response[i].longitude + "</td>"));
+					  table_row.append($("<td>" + "----------" + "</td>"));
+					  table_row.append($("<td>" + response[i].city + "</td>"));	
+					  table_row.append($("<td>" + "----------" + "</td>"));
+					  table_row.append($("<td>" + response[i].state + "</td>"));
+					  table_row.append($("<td>" + "-----------" + "</td>"));
+					  table_row.append($("</tr>"));
+					  $("#tablecontent tr#"+count).hide();
+              		  $("#tablecontent tr#"+count).fadeIn(500);
+              		  if(count%20 == 0)
+					 {
+						 $('#content tbody').html("");
+		 			}
+                      count = count + 1;		  
+                   }
+               });	
+				 
+		}, 500); //500 ms as specified in description
+		
+		
+		
+</script>
+
+			 
