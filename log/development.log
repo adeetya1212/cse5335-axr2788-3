@@ -42138,3 +42138,227 @@ Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loa
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 00:21:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/1" for 127.0.0.1 at 2015-12-08 00:21:42 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 858ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/1" for 127.0.0.1 at 2015-12-08 00:21:43 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 685ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/3" for 127.0.0.1 at 2015-12-08 00:21:43 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"3"}
+Completed 200 OK in 690ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/5" for 127.0.0.1 at 2015-12-08 00:21:44 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"5"}
+Completed 200 OK in 684ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/3" for 127.0.0.1 at 2015-12-08 00:21:45 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"3"}
+Completed 200 OK in 838ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/7" for 127.0.0.1 at 2015-12-08 00:21:46 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"7"}
+Completed 200 OK in 644ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/9" for 127.0.0.1 at 2015-12-08 00:21:46 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"9"}
+Completed 200 OK in 618ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/11" for 127.0.0.1 at 2015-12-08 00:21:47 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"11"}
+Completed 200 OK in 697ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/13" for 127.0.0.1 at 2015-12-08 00:21:48 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"13"}
+Completed 200 OK in 646ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/9" for 127.0.0.1 at 2015-12-08 00:21:48 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"9"}
+Completed 200 OK in 950ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/15" for 127.0.0.1 at 2015-12-08 00:21:49 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"15"}
+Completed 200 OK in 740ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/17" for 127.0.0.1 at 2015-12-08 00:21:50 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"17"}
+Completed 200 OK in 815ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/13" for 127.0.0.1 at 2015-12-08 00:21:51 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"13"}
+Completed 200 OK in 718ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/19" for 127.0.0.1 at 2015-12-08 00:21:51 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"19"}
+Completed 200 OK in 975ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/21" for 127.0.0.1 at 2015-12-08 00:21:52 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"21"}
+Completed 200 OK in 657ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/23" for 127.0.0.1 at 2015-12-08 00:21:53 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"23"}
+Completed 200 OK in 676ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 00:24:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/1" for 127.0.0.1 at 2015-12-08 00:24:12 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 923ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/1" for 127.0.0.1 at 2015-12-08 00:24:13 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 766ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/3" for 127.0.0.1 at 2015-12-08 00:24:14 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"3"}
+Completed 200 OK in 697ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/5" for 127.0.0.1 at 2015-12-08 00:24:14 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"5"}
+Completed 200 OK in 700ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/3" for 127.0.0.1 at 2015-12-08 00:24:15 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"3"}
+Completed 200 OK in 665ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/7" for 127.0.0.1 at 2015-12-08 00:24:16 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"7"}
+Completed 200 OK in 741ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/9" for 127.0.0.1 at 2015-12-08 00:24:17 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"9"}
+Completed 200 OK in 735ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/11" for 127.0.0.1 at 2015-12-08 00:24:17 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"11"}
+Completed 200 OK in 661ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/7" for 127.0.0.1 at 2015-12-08 00:24:18 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"7"}
+Completed 200 OK in 600ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/13" for 127.0.0.1 at 2015-12-08 00:24:19 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"13"}
+Completed 200 OK in 765ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/15" for 127.0.0.1 at 2015-12-08 00:24:19 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"15"}
+Completed 200 OK in 679ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/11" for 127.0.0.1 at 2015-12-08 00:24:20 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"11"}
+Completed 200 OK in 709ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/17" for 127.0.0.1 at 2015-12-08 00:24:21 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"17"}
+Completed 200 OK in 746ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/19" for 127.0.0.1 at 2015-12-08 00:24:21 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"19"}
+Completed 200 OK in 697ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/21" for 127.0.0.1 at 2015-12-08 00:24:22 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"21"}
+Completed 200 OK in 689ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/23" for 127.0.0.1 at 2015-12-08 00:24:23 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"23"}
+Completed 200 OK in 699ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/25" for 127.0.0.1 at 2015-12-08 00:24:24 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"25"}
+Completed 200 OK in 684ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/17" for 127.0.0.1 at 2015-12-08 00:24:24 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"17"}
+Completed 200 OK in 724ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/getjson/27" for 127.0.0.1 at 2015-12-08 00:24:25 -0600
+Processing by MaincontrollerController#getjson as */*
+  Parameters: {"i"=>"27"}
+Completed 200 OK in 624ms (Views: 44.8ms | ActiveRecord: 0.0ms)
