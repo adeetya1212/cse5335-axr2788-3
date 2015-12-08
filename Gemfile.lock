@@ -40,6 +40,7 @@ GEM
     bcrypt (3.1.10)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
+    bson (4.0.0)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -51,6 +52,7 @@ GEM
     concurrent-ruby (1.0.0)
     erubis (2.7.0)
     execjs (2.6.0)
+    fastercsv (1.5.5)
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
@@ -79,6 +81,8 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
+    mongo (2.2.0)
+      bson (~> 4.0)
     multi_json (1.11.2)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
@@ -156,12 +160,14 @@ DEPENDENCIES
   bcrypt (~> 3.1.2)
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
+  fastercsv
   figaro (~> 0.7.0)
   font-awesome-sass (~> 4.0.2)
   friendly_id (~> 5.0.2)
   jbuilder (~> 2.0)
   jquery-rails
   kaminari (~> 0.15.0)
+  mongo
   pg
   puma
   rails (= 4.2.3)
